@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Core Java Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><span class="brand-icon">J</span><div><strong>Core Java Practice</strong><small>Topic-wise questions & answers</small></div></div>
+    <a class="source-link" href="https://c4knowledgeseekers.in/practice/core-java-programming" target="_blank" rel="noreferrer">Original topic reference ↗</a>
+  </header>
+  <main class="layout">
+    <aside class="sidebar">
+      <h2>Topics</h2>
+      <input id="topicSearch" type="search" placeholder="Search topic..." aria-label="Search topics">
+      <nav id="topicList" aria-label="Java topics"></nav>
+      <p class="sidebar-note">Choose a topic to practise its questions.</p>
+    </aside>
+    <section class="content">
+      <div class="welcome" id="welcome">
+        <p class="eyebrow">LEARN BY PRACTISING</p>
+        <h1>Core Java, made simple.</h1>
+        <p>Select a topic on the left to view questions and reveal their answers.</p>
+        <div class="welcome-tip"><strong>How to use:</strong> Read each question, try to answer it yourself, then click <em>Show answer</em>.</div>
+      </div>
+      <div id="practice" hidden>
+        <div class="content-top">
+          <div><p class="eyebrow">TOPIC PRACTICE</p><h1 id="topicTitle"></h1><p id="topicDescription" class="muted"></p></div>
+          <span class="count-pill" id="questionCount"></span>
+        </div>
+        <div class="toolbar"><input id="questionSearch" type="search" placeholder="Search questions in this topic..." aria-label="Search questions"><button id="showAll" class="button button-light">Show all answers</button></div>
+        <div id="questionList" class="question-list"></div>
+        <div class="pager"><button id="prevTopic" class="button button-light">← Previous topic</button><span id="topicPosition"></span><button id="nextTopic" class="button button-primary">Next topic →</button></div>
+      </div>
+    </section>
+  </main>
+  <footer><span>Core Java Practice</span><span>Student project · HTML, CSS & JavaScript</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
